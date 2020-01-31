@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8", http-equiv="refresh", content="1.5;author.html">
+<title>Home</title>
+
+<style>
+
+@font-face{
+  font-family: Cologne;
+  src: url(fonts/FengardoNeue_Regular.otf) format("opentype");
+}
+
+.anim{
+  background-color: ivory;
+  width: 200px;height: 110px;
+  left: 50%; top: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  animation-name: big;
+  animation-duration: 1.5s;
+  border-radius: 5px;
+}
+	
+@keyframes big {
+  0% {background-color: ivory;width: 200px;height: 110px;}
+  40% {background-color: ivory;width: 101%;height: 101%}
+  49% {background-color: ivory;}
+  50% {background-image: linear-gradient(to right, #40E0D0, #FF8C00, #FF0080); opacity: 0;}
+  100% {background-image: linear-gradient(to right, #40E0D0, #FF8C00, #FF0080); opacity: 1; width: 101%; height: 101%;}
+}
+
+.butoon{
+  text-decoration: none;
+  background-color: ivory;
+  border: none;
+  border-radius: 5px;
+  
+  width: 180px;
+  height: 90px;
+  font-size: 40px;
+  font-family: Cologne;
+  
+  transition: background-color 0.5s, color 0.5s, height 0.5s, width 0.5s;
+}
+	
+body {
+  background-image: linear-gradient(to right, crimson, dodgerblue);
+}
+	
+</style>
+	
+</head>
+
+<body>
+    <div style="z-index: 0;">
+		<a><button class="butoon" style="position: fixed; top: 50%; left: 25%; transform: translate(-50%, -50%);">Story</button></a>
+        <!--<a href="authoranim.html"><button class="butoon" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">Author</button></a>-->
+		<a><button class="butoon" style="position: fixed; top: 50%; left: 75%; transform: translate(-50%, -50%);">Quiz</button></a>
+	</div>
+<div class="anim" style="z-index: 1;"></div>
+
+</body>
+</html>

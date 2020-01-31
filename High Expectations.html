@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+	<style>
+		@font-face{
+			font-family: Cologne;
+			src: url(files/fonts/FengardoNeue_Regular.otf) format("opentype");
+		}
+		
+		body{
+			background-image: linear-gradient(to right, crimson, dodgerblue);
+		}
+		
+		.butoon{
+			text-decoration: none;
+			background-color: ivory;
+			border: none;
+			border-radius: 5px;
+			
+			width: 180px;
+			height: 90px;
+
+			font-size: 40px;
+			font-family: Cologne;
+			
+			transition: background-color 0.5s, color 0.5s, height 0.5s, width 0.5s;
+		}
+
+		.butoon:hover{
+			color: ivory;
+			height: 110px;
+			width: 200px;
+		}
+		
+	</style>
+</head>
+
+<body>
+    <div>
+		<a href="files/plotanim.html"><button class="butoon" style="position: fixed; top: 50%; left: 25%; transform: translate(-50%, -50%);">Story</button></a>
+        <a href="files/authoranim.html"><button class="butoon" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">Author</button></a>
+		<a href="files/quizanim.html"><button class="butoon" style="position: fixed; top: 50%; left: 75%; transform: translate(-50%, -50%);">Quiz</button></a>
+	</div>
+
+</body>
+
+</html>

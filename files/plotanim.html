@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8", http-equiv="refresh", content="1.5;plot.html">
+<title>Home</title>
+
+<style>
+
+@font-face{
+  font-family: Cologne;
+  src: url(fonts/FengardoNeue_Regular.otf) format("opentype");
+}
+
+.anim{
+  background-color: ivory;
+  width: 200px;height: 110px;
+  left: 25%; top: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  animation-name: big;
+  animation-duration: 1.5s;
+  border-radius: 5px;
+}
+	
+@keyframes big {
+	0% {background-color: ivory;width: 200px;height: 110px;}
+	40% {background-color: ivory;left:50%;width: 101%;height: 101%}
+	50% {background-image: linear-gradient(to right, ivory 100%, dodgerblue);}
+	51% {background-image: linear-gradient(to right, ivory 99%, dodgerblue);}
+	52% {background-image: linear-gradient(to right, ivory 98%, dodgerblue);}
+	53% {background-image: linear-gradient(to right, ivory 97%, dodgerblue);}
+	54% {background-image: linear-gradient(to right, ivory 96%, dodgerblue);}
+	55% {background-image: linear-gradient(to right, ivory 95%, dodgerblue);}
+	56% {background-image: linear-gradient(to right, ivory 94%, dodgerblue);}
+	57% {background-image: linear-gradient(to right, ivory 93%, dodgerblue);}
+	58% {background-image: linear-gradient(to right, ivory 92%, dodgerblue);}
+	59% {background-image: linear-gradient(to right, ivory 91%, dodgerblue);}
+	60% {background-image: linear-gradient(to right, ivory 90%, dodgerblue);}
+	61% {background-image: linear-gradient(to right, ivory 89%, dodgerblue);}
+	62% {background-image: linear-gradient(to right, ivory 88%, dodgerblue);}
+	63% {background-image: linear-gradient(to right, ivory 87%, dodgerblue);}
+	64% {background-image: linear-gradient(to right, ivory 86%, dodgerblue);}
+	65% {background-image: linear-gradient(to right, ivory 85%, dodgerblue);}
+	66% {background-image: linear-gradient(to right, ivory 84%, dodgerblue);}
+	67% {background-image: linear-gradient(to right, ivory 83%, dodgerblue);}
+	68% {background-image: linear-gradient(to right, ivory 82%, dodgerblue);}
+	69% {background-image: linear-gradient(to right, ivory 81%, dodgerblue);}
+	70% {background-image: linear-gradient(to right, ivory 80%, dodgerblue);}
+	71% {background-image: linear-gradient(to right, ivory 79%, dodgerblue);}
+	72% {background-image: linear-gradient(to right, ivory 78%, dodgerblue);}
+	73% {background-image: linear-gradient(to right, ivory 77%, dodgerblue);}
+	74% {background-image: linear-gradient(to right, ivory 76%, dodgerblue);}
+	75% {background-image: linear-gradient(to right, ivory 75%, dodgerblue);}
+	76% {background-image: linear-gradient(to right, ivory 74%, dodgerblue);}
+	77% {background-image: linear-gradient(to right, ivory 73%, dodgerblue);}
+	78% {background-image: linear-gradient(to right, ivory 72%, dodgerblue);}
+	79% {background-image: linear-gradient(to right, ivory 71%, dodgerblue);}
+	80% {background-image: linear-gradient(to right, ivory 70%, dodgerblue);}
+	81% {background-image: linear-gradient(to right, ivory 69%, dodgerblue);}
+	82% {background-image: linear-gradient(to right, ivory 68%, dodgerblue);}
+	83% {background-image: linear-gradient(to right, ivory 67%, dodgerblue);}
+	84% {background-image: linear-gradient(to right, ivory 66%, dodgerblue);}
+	85% {background-image: linear-gradient(to right, ivory 65%, dodgerblue);}
+	86% {background-image: linear-gradient(to right, ivory 64%, dodgerblue);}
+	87% {background-image: linear-gradient(to right, ivory 63%, dodgerblue);}
+	88% {background-image: linear-gradient(to right, ivory 62%, dodgerblue);}
+	89% {background-image: linear-gradient(to right, ivory 61%, dodgerblue);}
+	90% {background-image: linear-gradient(to right, ivory 60%, dodgerblue);}
+	91% {background-image: linear-gradient(to right, ivory 59%, dodgerblue);}
+	92% {background-image: linear-gradient(to right, ivory 58%, dodgerblue);}
+	93% {background-image: linear-gradient(to right, ivory 57%, dodgerblue);}
+	94% {background-image: linear-gradient(to right, ivory 56%, dodgerblue);}
+	95% {background-image: linear-gradient(to right, ivory 55%, dodgerblue);}
+	96% {background-image: linear-gradient(to right, ivory 54%, dodgerblue);}
+	97% {background-image: linear-gradient(to right, ivory 53%, dodgerblue);}
+	98% {background-image: linear-gradient(to right, ivory 52%, dodgerblue);}
+	99% {background-image: linear-gradient(to right, ivory 51%, dodgerblue);}
+	100% {background-color: ivory; background-image: linear-gradient(to right, ivory 50%, dodgerblue); left:50%; width: 101%; height: 101%}
+}
+	
+body {
+  background-image: linear-gradient(to right, crimson, dodgerblue);
+}
+
+.butoon{
+  text-decoration: none;
+  background-color: ivory;
+  border: none;
+  border-radius: 5px;
+  
+  width: 180px;
+  height: 90px;
+  font-size: 40px;
+  font-family: Cologne;
+}
+	
+</style>
+	
+</head>
+
+<body>
+    <div style="z-index: 0;">
+		<!--<a href=""><button class="butoon" style="position: fixed; top: 50%; left: 25%; transform: translate(-50%, -50%);">Plot</button></a>-->
+        <a><button class="butoon" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">Author</button></a>
+		<a><button class="butoon" style="position: fixed; top: 50%; left: 75%; transform: translate(-50%, -50%);">Quiz</button></a>
+	</div>
+<div class="anim" style="z-index: 1;"></div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+
+    <style>
+    @font-face{
+        font-family: MyFont;
+        src: url("fonts/FengardoNeue_Regular.otf");
+    }
+    body{
+        font-size: 20px;
+        font-family: MyFont;
+        color: #333;
+        font-weight: 300;
+        text-align: center;
+        background-image: linear-gradient(180deg, ivory 25%, aqua);
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    h1{
+      font-weight: 300;
+      margin: 0px;
+      padding: 10px;
+      font-size: 20px;
+      background-color: #444;
+      color: #fff;
+    }
+    .question{
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    .answers {
+      margin-bottom: 20px;
+      text-align: left;
+      display: inline-block;
+    }
+    .answers label{
+      display: block;
+      margin-bottom: 10px;
+    }
+    button{
+      font-family: MyFont;
+        font-size: 22px;
+        background-color: #279;
+        color: #fff;
+        border: 0px;
+        border-radius: 3px;
+        padding: 20px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    button:hover{
+        background-color: #38a;
+    }
+    .slide{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+    .active-slide{
+      opacity: 1;
+      z-index: 2;
+    }
+    .quiz-container{
+      position: relative;
+      height: 200px;
+      margin-top: 40px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Quiz on Important Facts</h1>
+    <div class="quiz-container">
+        <div id="quiz"></div>
+    </div>
+    <button id="previous">Previous Question</button>
+    <button id="next">Next Question</button>
+    <button id="submit">Submit Quiz</button>
+    <div id="results"></div>
+    <script src="quiz.js"></script>
+</body>
+
+</html>

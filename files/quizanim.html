@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8", http-equiv="refresh", content="1.5;quiz.html">
+<title>Home</title>
+
+<style>
+
+@font-face{
+  font-family: Cologne;
+  src: url(fonts/FengardoNeue_Regular.otf) format("opentype");
+}
+
+.anim{
+  background-color: ivory;
+  width: 200px;height: 110px;
+  left: 75%; top: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  animation-name: big;
+  animation-duration: 1.5s;
+  border-radius: 5px;
+  animation-fill-mode: forwards;
+}
+
+.anim2{
+    background-color: #444;
+    width: 100%; height: 0px;
+    position: fixed;
+    animation-name: small;
+    animation-duration: 1.5s;
+    top: -10px;
+    left: 0px;
+    animation-fill-mode: forwards;
+}
+
+@keyframes small {
+    0% {background-color: #444; width: 100%; height: 0px;}
+    59% {height: 0px;}
+    60% {height: 1px;}
+    100% {height: 53px;}
+}
+	
+@keyframes big {
+    0% {background-color: ivory;width: 200px;height: 110px;}
+    40% {background-color: ivory;left:50%;width: 101%;height: 101%}
+    50% {background-image: linear-gradient(180deg, ivory 100%, aqua);}
+    51% {background-image: linear-gradient(180deg, ivory 98.5%, aqua);}
+    52% {background-image: linear-gradient(180deg, ivory 97.0%, aqua);}
+    53% {background-image: linear-gradient(180deg, ivory 95.5%, aqua);}
+    54% {background-image: linear-gradient(180deg, ivory 94.0%, aqua);}
+    55% {background-image: linear-gradient(180deg, ivory 92.5%, aqua);}
+    56% {background-image: linear-gradient(180deg, ivory 91.0%, aqua);}
+    57% {background-image: linear-gradient(180deg, ivory 89.5%, aqua);}
+    58% {background-image: linear-gradient(180deg, ivory 88.0%, aqua);}
+    59% {background-image: linear-gradient(180deg, ivory 86.5%, aqua);}
+    60% {background-image: linear-gradient(180deg, ivory 85.0%, aqua);}
+    61% {background-image: linear-gradient(180deg, ivory 83.5%, aqua);}
+    62% {background-image: linear-gradient(180deg, ivory 82.0%, aqua);}
+    63% {background-image: linear-gradient(180deg, ivory 80.5%, aqua);}
+    64% {background-image: linear-gradient(180deg, ivory 79.0%, aqua);}
+    65% {background-image: linear-gradient(180deg, ivory 77.5%, aqua);}
+    66% {background-image: linear-gradient(180deg, ivory 76.0%, aqua);}
+    67% {background-image: linear-gradient(180deg, ivory 74.5%, aqua);}
+    68% {background-image: linear-gradient(180deg, ivory 73.0%, aqua);}
+    69% {background-image: linear-gradient(180deg, ivory 71.5%, aqua);}
+    70% {background-image: linear-gradient(180deg, ivory 70.0%, aqua);}
+    71% {background-image: linear-gradient(180deg, ivory 68.5%, aqua);}
+    72% {background-image: linear-gradient(180deg, ivory 67.0%, aqua);}
+    73% {background-image: linear-gradient(180deg, ivory 65.5%, aqua);}
+    74% {background-image: linear-gradient(180deg, ivory 64.0%, aqua);}
+    75% {background-image: linear-gradient(180deg, ivory 62.5%, aqua);}
+    76% {background-image: linear-gradient(180deg, ivory 61.0%, aqua);}
+    77% {background-image: linear-gradient(180deg, ivory 59.5%, aqua);}
+    78% {background-image: linear-gradient(180deg, ivory 58.0%, aqua);}
+    79% {background-image: linear-gradient(180deg, ivory 56.5%, aqua);}
+    80% {background-image: linear-gradient(180deg, ivory 55.0%, aqua);}
+    81% {background-image: linear-gradient(180deg, ivory 53.5%, aqua);}
+    82% {background-image: linear-gradient(180deg, ivory 52.0%, aqua);}
+    83% {background-image: linear-gradient(180deg, ivory 50.5%, aqua);}
+    84% {background-image: linear-gradient(180deg, ivory 49.0%, aqua);}
+    85% {background-image: linear-gradient(180deg, ivory 47.5%, aqua);}
+    86% {background-image: linear-gradient(180deg, ivory 46.0%, aqua);}
+    87% {background-image: linear-gradient(180deg, ivory 44.5%, aqua);}
+    88% {background-image: linear-gradient(180deg, ivory 43.0%, aqua);}
+    89% {background-image: linear-gradient(180deg, ivory 41.5%, aqua);}
+    90% {background-image: linear-gradient(180deg, ivory 40.0%, aqua);}
+    91% {background-image: linear-gradient(180deg, ivory 38.5%, aqua);}
+    92% {background-image: linear-gradient(180deg, ivory 37.0%, aqua);}
+    93% {background-image: linear-gradient(180deg, ivory 35.5%, aqua);}
+    94% {background-image: linear-gradient(180deg, ivory 34.0%, aqua);}
+    95% {background-image: linear-gradient(180deg, ivory 32.5%, aqua);}
+    96% {background-image: linear-gradient(180deg, ivory 31.0%, aqua);}
+    97% {background-image: linear-gradient(180deg, ivory 29.5%, aqua);}
+    98% {background-image: linear-gradient(180deg, ivory 28.0%, aqua);}
+    99% {background-image: linear-gradient(180deg, ivory 26.5%, aqua);}
+    100% {background-image: linear-gradient(180deg, ivory 25.0%, aqua); left:50%; width:101%; height: 101%;}
+}
+
+body {
+  background-image: linear-gradient(to right, crimson, dodgerblue);
+}
+	
+.butoon{
+  text-decoration: none;
+  background-color: ivory;
+  border: none;
+  border-radius: 5px;
+  
+  width: 180px;
+  height: 90px;
+  font-size: 40px;
+  font-family: Cologne;
+}
+</style>
+	
+</head>
+
+<body>
+	
+    <div style="z-index: 0;">
+		<a><button class="butoon" style="position: fixed; top: 50%; left: 25%; transform: translate(-50%, -50%);">Story</button></a>
+        <a><button class="butoon" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">Author</button></a>
+		<!--<a href=""><button class="butoon" style="position: fixed; top: 50%; left: 75%; transform: translate(-50%, -50%);">Quiz</button></a>-->
+	</div>
+<div class="anim" style="z-index: 1;"></div>
+<div class="anim2" style="z-index: 2;"></div>
+
+</body>
+</html>
