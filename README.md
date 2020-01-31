@@ -1,2 +1,2 @@
-# high-expectations
+# High Expectations
 Simple website for an english project I worked on.
